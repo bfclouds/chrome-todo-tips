@@ -30,7 +30,7 @@ chrome.notifications.onButtonClicked.addListener(function (notificationId, butto
     chrome
     intervalTime = ADD_BASE_INTERVAL_TIME
   } else if(buttonIndex === 1) { // 已经写了
-    isLoc = isLock9 = true
+    isLock = true
   }
 })
 
