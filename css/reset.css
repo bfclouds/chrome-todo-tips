@@ -1,0 +1,19 @@
+body {
+  font-size: 14px;
+  color: #515151;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  color: #00a8ff;
+}
+input:focus-visible,
+textarea:focus-visible {
+  outline: none;
+}
