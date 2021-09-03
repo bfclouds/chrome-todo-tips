@@ -40,7 +40,7 @@ function tipTodo() {
     title: 'todo todo',
     message: '写todo写todo，不写就扣钱！',
     buttons: [button1, button2],
-    iconUrl: "/images/get_started16.png",
+    iconUrl: "/images/todo.jpeg",
     isClickable: true
   });
 }
