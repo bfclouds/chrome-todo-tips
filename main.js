@@ -27,7 +27,6 @@ chrome.runtime.onInstalled.addListener(() => {
 
 chrome.notifications.onButtonClicked.addListener(function (notificationId, buttonIndex) {
   if (buttonIndex === 0) { // 延迟5分钟
-    chrome
     intervalTime = ADD_BASE_INTERVAL_TIME
   } else if(buttonIndex === 1) { // 已经写了
     isLock = true
