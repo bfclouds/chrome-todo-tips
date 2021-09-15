@@ -1,14 +1,30 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="button.css">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <link rel="stylesheet" type="text/css" href="/css/popup.css">
+    <link rel="stylesheet" type="text/css" href="../css/popup.css">
   </head>
   <body>
     <div class="pop-wrapper">
-      
+      <div class="tips-view">
+        <h4>添加提醒</h4>
+        <ul class="tips-list">
+          <li class="item">
+            <span>日期：</span><input type="date" id="tip-date">
+          </li>
+          <li class="item">
+            <span>时间：</span><input type="time" id="tip-time">
+          </li>
+          <li class="item">
+            <span>文案：</span><input type="text" id="tip-desc">
+          </li>
+          <li class="item">
+            <span>提示次数：</span><input type="number" placeholder="默认无数次" id="tip-count">   
+          </li>
+          <button id="submitbtn">提交</button>
+        </ul>
+      </div>
     </div>
-    <script src="/js/popup.js"></script>
+    <script src="../js/popup.js"></script>
   </body>
 </html>
