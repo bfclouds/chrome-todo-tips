@@ -50,7 +50,7 @@ function tipTodo() {
 let date = new Date()
 
 function handleDate() {
-  date.setHours(9, 20, 0) // 时间设置为18:20:00
+  date.setHours(18, 20, 0) // 时间设置为18:20:00
   if ([3,4].includes(date.getDay())) {
     date.setHours(21, 20, 0) // 周三周四加班，时间设置为21:20:00
   }
