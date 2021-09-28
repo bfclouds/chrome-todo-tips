@@ -44,16 +44,20 @@ function tipTodo() {
   });
 }
 
+
+let date = new Date()
+
+function handleDate() {
+  date.setHours(18, 20, 0) // 时间设置为18:20:00
+  if ([3,4].includes(date.getDay())) {
+    date.setHours(21, 20, 0) // 周三周四加班，时间设置为21:20:00
+  }
+}
+
 function setTips () {
   timer = setTimeout(() => {
-    const date = new Date()
-    date.setHours(18, 20, 0) // 时间设置为18:20:00
-
-    if ([3,4].includes(date.getDay())) {
-      date.setHours(21, 20, 0) // 周三周四加班，时间设置为21:20:00
-    }
+    handleDate()
     const isThan = new Date().getTime() >= date.getTime()
-
     if (isThan && !isLock) {
       tipTodo()
     }
